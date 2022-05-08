@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    font-family: 'Amatic SC', cursive;
+}
+
+#header, #footer {
+    background-color: #5D675B;
+    color: #F7EF99;
+    font-size: 32px;
+    font-family: 'Patrick Hand', cursive;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#button-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#button-row > img {
+    background-color: #CCE2A3;
+    width: 20%; max-width: 200px;
+    margin-top: 20px;
+    box-shadow: 10px 10px 2px #A8C69F;
+    padding: 10px;
+}

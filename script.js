@@ -17,22 +17,27 @@ function computerPlay() {
 function game(player_choice) {
     
     computer_choice = computerPlay()
-    console.log("\nYou chose " + player_choice);
-    console.log("Computer chose", computer_choice);
 
-    player_choice = dict[player_choice]
-    computer_choice = dict[computer_choice]
+    document.getElementById('player-choice').innerHTML = `You chose ${player_choice}`;
+    document.getElementById('computer-choice').innerHTML = `Computer chose ${computer_choice}`;
+
+    player_choice = dict[player_choice];
+    computer_choice = dict[computer_choice];
 
     if (player_choice === computer_choice) {
-        console.log("It's a tie!");
+        document.getElementById('result-text').innerHTML = `It's a tie!`;
         scores['ties']++;
     } else {
         if ((player_choice + 1) % 3 === computer_choice) {
-            console.log("Computer wins!");
+            document.getElementById('result-text').innerHTML = `Computer wins!`;
             scores['computer']++;
         } else {
-            console.log("You win!");
+            document.getElementById('result-text').innerHTML = `You win!`;
             scores['player']++;
         }
     }
+
+    document.getElementById('player-wins').innerHTML = scores['player'];
+    document.getElementById('computer-wins').innerHTML = scores['computer'];
+    document.getElementById('ties').innerHTML = scores['ties'];
 }

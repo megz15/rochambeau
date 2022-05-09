@@ -14,14 +14,33 @@
 
 </head>
 <body>
-    <div id="header"><b>Rock Paper Scissors</b></div>
-    <div id="main">
-        <div id="button-row">
-            <img src="https://img.icons8.com/emoji/344/rock-emoji.png" alt="Rock" onclick="game('rock');">
-            <img src="https://img.icons8.com/dusk/344/paper.png" alt="Paper" onclick="game('paper');">
-            <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/344/external-scissor-home-improvements-flaticons-flat-flat-icons.png" alt="Scissors" onclick="game('scissor')">
+    <div id="sections">
+        <div id="header"><b>Rock Paper Scissors</b></div>
+        <div id="main">
+            <div id="button-row">
+                <img tabindex="1" src="https://img.icons8.com/ios-filled/344/hand-rock.png" alt="Rock" onclick="game('rock');">
+                <img tabindex="1" src="https://img.icons8.com/ios-filled/344/hand.png" alt="Paper" onclick="game('paper');">
+                <img tabindex="1" src="https://img.icons8.com/ios-filled/344/hand-scissors--v1.png" alt="Scissors" onclick="game('scissor')">
+            </div>
+            
+            <div id="groups">
+                <div>
+                    ╔═*.·:·.✧ ✦ ✧.·:·.*═╗
+                    <div id="player-choice"><br></div>
+                    <div id="computer-choice">Choose your weapon!</div>
+                    <div id="result-text"><br></div>
+                    ╚═*.·:·.✧ ✦ ✧.·:·.*═╝
+                </div>
+                <div>
+                    ╔═*.·:·.✧ ✦ ✧.·:·.*═╗
+                    <div>Player:<span id="player-wins">0</span></div>
+                    <div>Computer:<span id="computer-wins">0</span></div>
+                    <div>Ties:<span id="ties">0</span></div>
+                    ╚═*.·:·.✧ ✦ ✧.·:·.*═╝
+                </div>
+            </div>
         </div>
+        <div id="footer" style="font-size: 24px;">Made with 💜 by Meghraj Goswami</div>
     </div>
-    <!-- <div id="footer">Made with 💜 by Meghraj Goswami</div> -->
 </body>
 </html>
